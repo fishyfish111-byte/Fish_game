@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 50% 0%, #4d94ff, #00203f);
+  color: #eef7ff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.game-shell {
+  width: 1460px;
+  max-width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+header p {
+  margin-bottom: 14px;
+  color: #c9e6ff;
+}
+
+canvas {
+  width: 100%;
+  border: 4px solid #91c9ff;
+  border-radius: 14px;
+  background: linear-gradient(#00162e, #003a66);
+  display: block;
+  margin: 0 auto;
+}
+
+.hud {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+#restartButton {
+  margin: 14px auto 0;
+  display: inline-block;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 999px;
+  background: #5da8ff;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#restartButton:hover {
+  background: #79b8ff;
+  transform: translateY(-1px);
+}
+
+.instructions {
+  margin-top: 12px;
+  color: #dbeffd;
+}
+
+.instructions p {
+  margin: 4px 0;
+}
